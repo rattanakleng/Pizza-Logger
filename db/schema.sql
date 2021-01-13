@@ -1,5 +1,9 @@
+DROP DATABASE IF EXISTS  pizza_db;
+
 CREATE DATABASE pizza_db;
-USE pizz_db;
+
+USE pizza_db;
+
 CREATE TABLE pizzas (
   id INT NOT NULL AUTO_INCREMENT,
   name VARCHAR(150) NOT NULL,
