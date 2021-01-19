@@ -17,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/rattanakleng/Pizza-Logger/issues"
   },
-  "homepage": "https://github.com/rattanakleng/Pizza-Logger#readme"
+  "homepage": "https://github.com/rattanakleng/Pizza-Logger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  }
 }

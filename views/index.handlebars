@@ -1,0 +1,88 @@
+<div class="vh-100">
+  <div class="jumbotron jumbotron-fluid h-25 mb-0 bg-light">
+    <div class="container">
+      <img src="../assets/img/pizza-logo.png" class="mx-auto d-block img-logo pt-0" alt="Responsive image">
+      <h3 class="h2 text-center">The Pizza-Lover’s Pizza</h3>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid h-75 pt-5 bg-img">
+    <div class="container mb-4">
+
+      <p class="h3 text-center text-light">What is your favorite Pizza?</p>
+
+      <div class="d-flex justify-content-center">
+
+        <form class="create-form form-inline">
+          <div class="row">
+            <div class="col">
+              <div class="form-group ">
+                <input type="text" class="form-control mr-4" id="new-pizza" placeholder="Pizza name">
+              </div>
+
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary">Add to Menu</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+      <div class="row justify-content-around">
+        <div class="col-lg-6 px-5">
+          <div class="card bg-light mb-3">
+
+            <h4 class="card-header card-title text-center">ON THE MENU</h4>
+
+            <div class="card-body pr-5">
+              <ul class="text-dark">
+                {{#each pizzas}}
+                {{#unless devoured}}
+                {{> pizzas/pizza-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 px-5">
+          <div class="card bg-light mb-3">
+            <h4 class="card-header card-title text-center">PIZZA EATEN</h4>
+
+            <div class="card-body pr-5">
+              <ul>
+                {{#each pizzas}}
+                {{#if devoured}}
+                {{> pizzas/pizza-block devoured=false}}
+                {{/if}}
+                {{/each}}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Alert Modal --}}
+<div class="modal" tabindex="-1" role="dialog" id="alert-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>Please enter a pizza name!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
