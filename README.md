@@ -29,7 +29,7 @@ The application is created with MySQL, Node, Express, Handlebars, and a custom O
 ## Installation
 Fork repository and clone onto your machine.
 You should have NODE installed
-12q1q
+
 ## Web Page
 ![pizza](https://user-images.githubusercontent.com/29310963/107883580-9b0dd900-6ea4-11eb-8bf1-f84d21e6b20e.PNG)
 
