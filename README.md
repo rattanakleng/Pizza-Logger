@@ -25,6 +25,8 @@
 - [Contributing](#contributing)
 - [License](#license)
 ## Description
+In this Pizza Logger application, the users can list out the pizza they want to eat in the Menu section. In the Menu section, the user can delete or devour the pizzas from the list. After the user clicks Devour!, the selected pizza will appear in the Pizza Eaten Section. In the Pizza Enten section, the user can delete or move the pizzas back to the Menu. 
+
 The application is created with MySQL, Node, Express, Handlebars, and a custom ORM.
 ## Installation
 - Fork repository or clone to your machine.
@@ -36,10 +38,8 @@ The application is created with MySQL, Node, Express, Handlebars, and a custom O
 ## Repository and Live Site
 Repository: https://github.com/rattanakleng/Pizza-Logger </br>
 Live site: https://pizza-logger.herokuapp.com/
-
-
  
-## Contributing
+## Contributor
 Rattanak Leng 
 GitHub: https://github.com/rattanakleng </br>
 Linkedin: https://www.linkedin.com/in/rattanak-leng-523660140/
